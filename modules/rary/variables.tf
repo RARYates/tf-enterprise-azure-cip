@@ -11,7 +11,7 @@ variable resource_groups {
     
  variable "region" {
    type        = string
-   default     = "North Europe"
+   default     = "West US 2"
    description = "The Azure region to deploy resources"
    validation {
      condition     = contains(["West US 3", "West US 2", "West US"], var.region)
